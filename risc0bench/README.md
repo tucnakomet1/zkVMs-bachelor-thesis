@@ -4,6 +4,8 @@
 For example:
 > cargo run --release -- --n 50 --sha256
 
+CLI usage:
+
 ```bash
 Usage: cargo run --release -- [OPTIONS]
 

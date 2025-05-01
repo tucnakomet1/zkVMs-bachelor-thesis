@@ -38,12 +38,18 @@ This repository contains three folders [risc0bench](risc0bench), [sp1bench](sp1b
 ### Structure of risc0 folder
 
 This folder contains following subfolders:
-- [host](risc0bench/host/): host method, parse CLI, runs the prover and verifier.
-- [method/guest](risc0bench/methods/guest/): guest method, contains Fibonacci, SHA-256 and Poseidon hash functions.
+- [script](risc0bench/script/src/bin/): host method, parse CLI, runs the prover and verifier.
+- [program](risc0bench/methods/guest/): guest method, contains Fibonacci, SHA-256 and Poseidon hash function.
+- [lib](risc0bench/lib/src/): guest sha256 function, called by evm program
+- [utils](sp1bench/utils/): method for calculating size of the proof
+- [contracts](sp1bench/contracts/): evm folder, contains generated solidity code
 
 
 ### Structure of SP1 folder
 
+This folder contains following subfolders:
+- [host](risc0bench/host/): host method, parse CLI, runs the prover and verifier.
+- [method/guest](risc0bench/methods/guest/): guest method, contains Fibonacci, SHA-256 and Poseidon hash functions.
 
 
 ## Usage
@@ -52,7 +58,7 @@ To run the benchmark, go to a specific folder first:
 ```bash
 cd risc0bench 
 # or
-cd sp1bench 
+cd sp1bench/script
 # or
 cd graphs
 ```
@@ -72,5 +78,24 @@ cargo run -- --n 10 --sha256 --snark  # > log.txt
 > *There are two Poseidon hash implementation, one using SP1 library, the second (poseidon2) using RISC Zero library.*
 
 ### SP1
+
+Inside `sp1bench/script` run the following script:
+```bash
+# for normal STARK proof generation
+RUST_LOG=info cargo run --release -- --n 10 --sha256 # > log.txt
+
+# for a SNARK proof generation - choose between groth16 and plonk
+RUST_LOG=info cargo run --release --bin evm -- --system groth16 --n 10 # > log.txt
+RUST_LOG=info cargo run --release --bin evm -- --system plonk --n 10 # > log.txt
+```
+- where `n` is again any integer denoting the number of benchmark repetitions
+- you can choose between flags `--fibonacci`, `--sha256`, `--poseidon`
+- if you want to save logs, use also `> log.txt`
+- if you want to generate SNARK:
+    - you have to include `--bin evm` flag
+    - you can choose between `--system groth16` and `--system plonk`
+
+> You can run fibonacci/sha256/poseidon only in normal mode. By running EVM, sha256 is always forced - other functions are not compatible
+
 
 ### Graphs

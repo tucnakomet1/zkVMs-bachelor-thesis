@@ -1,0 +1,18 @@
+[package]
+version = "0.1.0"
+name = "sha256-program"
+edition = "2021"
+
+[dependencies]
+alloy-sol-types = { workspace = true }
+sp1-zkvm = "4.2.0"
+sha256-lib = { path = "../lib" }
+serde = { version = "1.0.219", features = ["derive"] }
+
+# patched sha2
+sha2-v0-10-8 = { git = "https://github.com/sp1-patches/RustCrypto-hashes", package = "sha2", branch = "patch-v0.10.8" }
+
+# poseidon
+p3-baby-bear = "0.2.2-succinct"
+p3-field = "0.2.2-succinct"
+sp1-primitives = "4.1.1"
