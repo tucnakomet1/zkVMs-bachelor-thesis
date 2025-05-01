@@ -1,0 +1,21 @@
+[package]
+name = "sha"
+version = "0.1.0"
+edition = "2021"
+
+
+[workspace]
+
+[dependencies]
+risc0-zkvm = { version = "2.0.2", default-features = false, features = ['std'] }
+risc0-zkvm-platform = { version = "2.0.2", features = ["sys-args"] }
+serde = "1.0.219"
+
+# risc0 poseidon
+risc0-zkp = "2.0.0"
+risc0-core = "2.0.0"
+
+# sp1 poseidon
+p3-baby-bear = "0.2.0-succinct"
+p3-field = "0.2.0-succinct"
+sp1-primitives = "4.1.1"
