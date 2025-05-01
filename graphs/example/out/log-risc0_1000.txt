@@ -1,0 +1,10 @@
+Run: 0; Input: 1000
+Prover time: 21907 ms
+Verifier time: 33 ms
+Receipt size: 209506 bytes
+Proof size: 209192 bytes
+Journal size: 314 bytes
+Total Cycles: 32768
+Paging Cycles: 15578
+User Cycles: 7673
+Reserved Cycles: 9517

@@ -1,0 +1,57 @@
+Number of repetitions: 1; Function: 1
+Run: 0; Input: 5
+2025-05-01T18:44:28.198480Z  WARN SP1_PROVER environment variable not set, defaulting to 'cpu'
+2025-05-01T18:44:31.131720Z  INFO execute: clk = 0 pc = 0x20252c
+2025-05-01T18:44:31.137250Z  INFO execute: gas: 1062583
+2025-05-01T18:44:31.137308Z  INFO execute: close time.busy=7.55ms time.idle=6.15µs
+Total cycles: 42382
+2025-05-01T18:44:32.252911Z  INFO prove_core: clk = 0 pc = 0x20252c
+2025-05-01T18:44:32.263523Z  INFO prove_core: clk = 0 pc = 0x20252c
+2025-05-01T18:44:32.520948Z  INFO prove_core:generate main traces: close time.busy=203ms time.idle=4.26µs index=0
+2025-05-01T18:44:58.247835Z  INFO prove_core: close time.busy=25.7s time.idle=272ms
+Proof size: 5674730 bytes
+2025-05-01T18:44:58.745338Z  INFO verify: close time.busy=492ms time.idle=5.66µs
+Successfully verified proof!
+
+Run: 0; Input: 10
+2025-05-01T18:44:58.959179Z  WARN SP1_PROVER environment variable not set, defaulting to 'cpu'
+2025-05-01T18:45:01.746786Z  INFO execute: clk = 0 pc = 0x20252c
+2025-05-01T18:45:01.753694Z  INFO execute: gas: 1084186
+2025-05-01T18:45:01.753742Z  INFO execute: close time.busy=8.85ms time.idle=5.38µs
+Total cycles: 83792
+2025-05-01T18:45:02.743367Z  INFO prove_core: clk = 0 pc = 0x20252c
+2025-05-01T18:45:02.751536Z  INFO prove_core: clk = 0 pc = 0x20252c
+2025-05-01T18:45:03.001942Z  INFO prove_core:generate main traces: close time.busy=192ms time.idle=5.31µs index=0
+2025-05-01T18:45:29.085239Z  INFO prove_core: close time.busy=26.1s time.idle=257ms
+Proof size: 5674890 bytes
+2025-05-01T18:45:29.584265Z  INFO verify: close time.busy=492ms time.idle=5.17µs
+Successfully verified proof!
+
+Run: 0; Input: 50
+2025-05-01T18:45:29.823072Z  WARN SP1_PROVER environment variable not set, defaulting to 'cpu'
+2025-05-01T18:45:32.601668Z  INFO execute: clk = 0 pc = 0x20252c
+2025-05-01T18:45:32.618673Z  INFO execute: gas: 1529943
+2025-05-01T18:45:32.618727Z  INFO execute: close time.busy=18.9ms time.idle=5.24µs
+Total cycles: 398512
+2025-05-01T18:45:33.618352Z  INFO prove_core: clk = 0 pc = 0x20252c
+2025-05-01T18:45:33.638035Z  INFO prove_core: clk = 0 pc = 0x20252c
+2025-05-01T18:45:34.058400Z  INFO prove_core:generate main traces: close time.busy=268ms time.idle=6.57µs index=0
+2025-05-01T18:46:21.370175Z  INFO prove_core: close time.busy=47.3s time.idle=427ms
+Proof size: 5676170 bytes
+2025-05-01T18:46:21.896337Z  INFO verify: close time.busy=519ms time.idle=8.24µs
+Successfully verified proof!
+
+Run: 0; Input: 100
+2025-05-01T18:46:22.117457Z  WARN SP1_PROVER environment variable not set, defaulting to 'cpu'
+2025-05-01T18:46:24.793003Z  INFO execute: clk = 0 pc = 0x20252c
+2025-05-01T18:46:24.824463Z  INFO execute: gas: 2074122
+2025-05-01T18:46:24.824522Z  INFO execute: close time.busy=33.4ms time.idle=5.17µs
+Total cycles: 791912
+2025-05-01T18:46:25.840121Z  INFO prove_core: clk = 0 pc = 0x20252c
+2025-05-01T18:46:25.865963Z  INFO prove_core: clk = 0 pc = 0x20252c
+2025-05-01T18:46:26.184670Z  INFO prove_core:generate main traces: close time.busy=147ms time.idle=5.73µs index=0
+2025-05-01T18:46:26.765761Z  INFO prove_core:generate main traces: close time.busy=356ms time.idle=8.66µs index=1
+2025-05-01T18:47:46.689771Z  INFO prove_core: close time.busy=80.5s time.idle=315ms
+Proof size: 7297545 bytes
+2025-05-01T18:47:47.331835Z  INFO verify: close time.busy=634ms time.idle=6.63µs
+Successfully verified proof!

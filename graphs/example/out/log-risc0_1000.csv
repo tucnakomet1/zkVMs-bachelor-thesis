@@ -1,0 +1,4 @@
+Run,Total cycles,Proof size (bytes),Time busy prover (ms),Time busy verifier (ms)
+0,32768,209192,21907.0,33.0
+,,,,
+mean,32768,209192,21907.0,33.0

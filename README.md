@@ -38,19 +38,17 @@ This repository contains three folders [risc0bench](risc0bench), [sp1bench](sp1b
 ### Structure of risc0 folder
 
 This folder contains following subfolders:
+- [host](risc0bench/host/): host method, parse CLI, runs the prover and verifier.
+- [method/guest](risc0bench/methods/guest/): guest method, contains Fibonacci, SHA-256 and Poseidon hash functions.
+
+### Structure of SP1 folder
+
+This folder contains following subfolders:
 - [script](risc0bench/script/src/bin/): host method, parse CLI, runs the prover and verifier.
 - [program](risc0bench/methods/guest/): guest method, contains Fibonacci, SHA-256 and Poseidon hash function.
 - [lib](risc0bench/lib/src/): guest sha256 function, called by evm program
 - [utils](sp1bench/utils/): method for calculating size of the proof
 - [contracts](sp1bench/contracts/): evm folder, contains generated solidity code
-
-
-### Structure of SP1 folder
-
-This folder contains following subfolders:
-- [host](risc0bench/host/): host method, parse CLI, runs the prover and verifier.
-- [method/guest](risc0bench/methods/guest/): guest method, contains Fibonacci, SHA-256 and Poseidon hash functions.
-
 
 ## Usage
 
@@ -99,3 +97,9 @@ RUST_LOG=info cargo run --release --bin evm -- --system plonk --n 10 # > log.txt
 
 
 ### Graphs
+
+This folder contains python codes for scraping the results of benchmarks.
+
+- [split_to_parts.py](graphs/split_to_parts.py): split the log file into parts by an input
+- [scraper.py](graphs/scraper.py): scrape the log file and save it into csv
+- [complet_to_csv.py](graphs/complet_to_csv.py): merge all the csvs into one `complet.csv` file
