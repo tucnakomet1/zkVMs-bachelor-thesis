@@ -48,7 +48,7 @@ This folder contains following subfolders:
 
 ## Usage
 
-To run the benchmark, go first into specific folder:
+To run the benchmark, go to a specific folder first:
 ```bash
 cd risc0bench 
 # or
@@ -59,16 +59,17 @@ cd graphs
 
 ### RISC Zero
 
-Inside the main RISC Zero directory (`/risc0bench`) run the following command:
+Run the following command in the main RISC Zero directory (`/risc0bench`):
 
 ```bash
 cargo run -- --n 10 --sha256 --snark  # > log.txt
 ```
-- where `n` can be any integer (by default 20) and means the number of benchmark repetitions
+- where `n` can be any integer (by default 20) and denotes the number of benchmark repetitions
 - you can choose between flags `--fibonacci`, `--sha256`, `--poseidon`, `--poseidon2`
 - flag `--snark` is optional - if used, the Groth16 proof is generated
 - if you want to save logs, use also `> log.txt`
 
+> *There are two Poseidon hash implementation, one using SP1 library, the second (poseidon2) using RISC Zero library.*
 
 ### SP1
 
