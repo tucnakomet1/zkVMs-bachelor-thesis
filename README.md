@@ -2,6 +2,8 @@
 
 This repository contain Fibonacci, SHA-256, Poseidon and STARK to SNARK benchmarks of [SP1](https://succinct.xyz/) and [RISC Zero](https://risczero.com/) zkVMs.
 
+You can find my bachelor thesis in the [UK digital repository](https://dspace.cuni.cz/bitstream/handle/20.500.11956/200877/130423510.pdf).
+
 ## Installation
 
 It is assumed that rust is installed.
